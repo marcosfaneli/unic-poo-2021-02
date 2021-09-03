@@ -8,5 +8,9 @@ public class CalculaImposto {
 		
 		return valorImposto;
 	}
+	
+	void metodoSemRetorno(String param) {
+		System.out.println(param);
+	}
 
 }
