@@ -17,15 +17,29 @@ public class Programa {
 		String matriculaDigitada = leitor.nextLine();
 		aluno.setMatricula(matriculaDigitada);
 		
-		System.out.println("Digite o bimestre: ");
-		int bimestreDigitado = leitor.nextInt();
+		String continuar = "";
 		
-		System.out.println("Digite a nota do " + 
-		   bimestreDigitado + " bimestre: ");
-		double notaDigitada = leitor.nextDouble();
+		//continuar.equalsIgnoreCase("N") !=
+		while(!continuar.toUpperCase().contentEquals("N")) {
+			
+			System.out.println("Digite o bimestre: ");
+			int bimestreDigitado = leitor.nextInt();
+			
+			System.out.println("Digite a nota do " + 
+			   bimestreDigitado + " bimestre: ");
+			double notaDigitada = leitor.nextDouble();
+			
+			aluno.definirNotaDoBimestre(bimestreDigitado, 
+					notaDigitada);
+			
+			System.out.println("Deseja informar outra nota "
+					+ "para o " + aluno.getNome() 
+					+ "? (S ou N)");
+			
+			continuar = leitor.next();
+		}
 		
-		aluno.definirNotaDoBimestre(bimestreDigitado, 
-				notaDigitada);
+		Avaliador.avaliar(aluno);
 		
 		System.out.println(aluno.toString());
 

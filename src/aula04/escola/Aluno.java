@@ -1,6 +1,6 @@
 package aula04.escola;
 
-public class Aluno extends Object {
+public class Aluno {
 	
 	private String nome;
 	private String matricula;
@@ -10,6 +10,10 @@ public class Aluno extends Object {
 	//Métodos Get e Set
 	public void setNome(String valor) {
 		this.nome = valor;
+	}
+	
+	public String getNome() {
+		return this.nome;
 	}
 
 	public void setMatricula(String matriculaDigitada) {
@@ -24,6 +28,14 @@ public class Aluno extends Object {
 			throw new Exception("Bimestre informado não existe");
 		}
 		this.notas[bimestre - 1] = nota;
+	}
+	
+	public double[] getNotas() {
+		return this.notas;
+	}
+	
+	public void setSituacao(Situacao valor) {
+		this.situacao = valor;
 	}
 	
 	//Polimorfismo
