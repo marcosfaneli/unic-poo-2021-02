@@ -1,0 +1,22 @@
+João das Neves,10
+Maria João,20
+Joaquim Procópio,15
+Ilton Alfredo,16
+João das Neves,10
+Maria João,18
+Joaquim Procópio,6
+Ilton Alfredo,17
+João das Neves,9
+Maria João,44
+Joaquim Procópio,15
+Ilton Alfredo,16
+Maria João,2
+Joaquim Procópio,11
+Ilton Alfredo,16
+João das Neves,10
+Maria João,20
+Ilton Alfredo,14
+João das Neves,3
+Maria João,22
+Joaquim Procópio,35
+Ilton Alfredo,11
