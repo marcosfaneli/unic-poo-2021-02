@@ -1,41 +1,23 @@
 package aula10;
 
+import java.util.ArrayList;
+import java.util.List;
+
 class ReajusteSalarial {
 
 	public static void main(String[] args) {
-		CalcularReajuste calculador = new CalcularReajuste();
 		
-		Empregado joao = new Empregado("João",Cargo.DESENVOLVEDOR, 1000.0);
-		System.out.println(joao);
+		List<Empregado> empregados = new ArrayList<>();
 		
-		Double reajuste = calculador.calcular(joao);
+		empregados.add(new Empregado("João",Cargo.DESENVOLVEDOR, 3200.0));
+		empregados.add(new Empregado("Pedro",Cargo.ANALISTA, 4000.0));
+		empregados.add(new Empregado("Maria",Cargo.GERENTE, 6500.0));
+		empregados.add(new Empregado("Isabel",Cargo.GERENTE, 4000.0));
+		empregados.add(new Empregado("Matias",Cargo.QUALIDADE, 5000.0));
 		
-		joao.reajustarSalario(reajuste);
-		System.out.println(joao);
-		
-		Empregado pedro = new Empregado("Pedro",Cargo.ANALISTA, 1000.0);
-		System.out.println(pedro);
-		
-		reajuste = calculador.calcular(pedro);
-		
-		pedro.reajustarSalario(reajuste);
-		System.out.println(pedro);
-		
-		Empregado maria = new Empregado("Maria",Cargo.GERENTE, 1000.0);
-		System.out.println(maria);
-		
-		reajuste = calculador.calcular(maria);
-		
-		maria.reajustarSalario(reajuste);
-		System.out.println(maria);
-		
-		Empregado matias = new Empregado("Matias",Cargo.QUALIDADE, 1000.0);
-		System.out.println(matias);
-		
-		reajuste = calculador.calcular(matias);
-		
-		matias.reajustarSalario(reajuste);
-		System.out.println(matias);
+		for(Empregado emp : empregados) {
+			ReajustarSalarioEmpregado.reajustar(emp);
+		}
 		
 	}
 

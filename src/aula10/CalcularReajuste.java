@@ -1,10 +1,14 @@
 package aula10;
 
+import aula10.reajuste.Reajuste;
+
 class CalcularReajuste {
 	
 	public Double calcular(Empregado empregado) {
 		
-		Double valorDoReajuste = empregado.getSalario() * empregado.getCargo().getValorReajuste() / 100;
+		Reajuste reajuste = empregado.getCargo().getReajuste();
+		
+		Double valorDoReajuste = reajuste.calcular(empregado.getSalario());
 		
 		return valorDoReajuste;
 	}

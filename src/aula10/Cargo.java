@@ -1,30 +1,35 @@
 package aula10;
 
+import aula10.reajuste.Reajuste;
+import aula10.reajuste.ReajusteSalarialAnalista;
+import aula10.reajuste.ReajusteSalarialDesenvolvedor;
+import aula10.reajuste.ReajusteSalarialGerente;
+import aula10.reajuste.ReajusteSalarialQualidade;
+
 enum Cargo {
 	
-	DESENVOLVEDOR{
-		public Double getValorReajuste() {
-			return 10.0;
+	DESENVOLVEDOR {
+		@Override
+		public Reajuste getReajuste() {
+			return new ReajusteSalarialDesenvolvedor();
 		}
-	}
-	,ANALISTA{
-		public Double getValorReajuste() {
-			return 9.0;
+	},ANALISTA {
+		@Override
+		public Reajuste getReajuste() {
+			return new ReajusteSalarialAnalista();
 		}
-	},GERENTE{
-		public Double getValorReajuste() {
-			return 8.0;
+	},GERENTE {
+		@Override
+		public Reajuste getReajuste() {
+			return new ReajusteSalarialGerente();
 		}
-	},QUALIDADE{
-		public Double getValorReajuste() {
-			return 9.5;
-		}
-	}, SUPORTE {
-		public Double getValorReajuste() {
-			return 8.5;
+	},QUALIDADE {
+		@Override
+		public Reajuste getReajuste() {
+			return new ReajusteSalarialQualidade();
 		}
 	};
 	
-	public abstract Double getValorReajuste();
+	public abstract Reajuste getReajuste();
 
 }

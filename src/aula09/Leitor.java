@@ -9,6 +9,8 @@ import java.util.Scanner;
 class Leitor {
 
 	public Map<String, Integer> executarLeitura(String caminhoDoArquivo){
+
+		System.out.println("Carregando dados do arquivo");
 		
 		Map<String, Integer> totalVotos = new HashMap<>();
 		
