@@ -1,0 +1,11 @@
+1,Impressora não esta funcionando,ABERTO,1
+2,Rede não esta conectando,FECHADO,1
+3,Mouse com defeito,ANDAMENTO,1
+4,Computador travando,ANDAMENT0,2
+5,Site da Caixa não abre no computador,ABERTO,1
+6,Antivírus desatualizado,ABERTO,3
+7,Trocar a lampada,ANDAMENTO,1
+8,Internet muito lenta,ANDAMENTO,3
+9,Instalar Autocad,ABERTO,3
+10,Computador sem espaço em disco,ABERTO,2
+11,Mensagem de computador infetado por antivírus,ANDAMENTO,1
