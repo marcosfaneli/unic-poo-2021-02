@@ -6,6 +6,6 @@
 6,Antivírus desatualizado,ABERTO,3
 7,Trocar a lampada,ANDAMENTO,1
 8,Internet muito lenta,ANDAMENTO,3
-9,Instalar Autocad,ABERTO,3
+9,Instalar Autocad,FECHADO,3
 10,Computador sem espaço em disco,ABERTO,2
 11,Mensagem de computador infetado por antivírus,ANDAMENTO,1
